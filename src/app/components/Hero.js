@@ -33,7 +33,7 @@ export default function Hero() {
             >
               View Projects
             </ScrollTo>
-            <button className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-gray-800 dark:text-white cursor-pointer">
+            <button className="px-6 py-3 border bg-white border-gray-700 rounded-full hover:bg-blue-100 hover:text-gray-950  transition-colors font-medium text-gray-800  cursor-pointer">
               <Link
                 href="/Mahmoud-Essam.pdf"
                 target="_blank"

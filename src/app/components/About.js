@@ -27,10 +27,22 @@ export default function About() {
                 <li>
                   <p className="font-medium text-gray-800 dark:text-white">BS in Business Information System</p>
                   <p className="text-gray-600 dark:text-gray-300">Alabasia Institute</p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">2023 - Present</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">Oct 2023 - Present</p>
                 </li>
               </ul>
             </div>
+            
+            <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Experience</h3>
+              <ul className="space-y-4">
+                <li>
+                  <p className="font-medium text-gray-800 dark:text-white">Intern Frontend Developer</p>
+                  <p className="text-gray-600 dark:text-gray-300">DEPI</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">July 2025 - Dec 2025</p>
+                </li>
+              </ul>
+            </div>
+            
           </div>
         </div>
       </div>

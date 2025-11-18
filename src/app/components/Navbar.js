@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-10 py-4 shadow-sm">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white">Dev<span className="text-blue-600">Portfolio</span></Link>
+        <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white">Mahmoud<span className="text-blue-600">Essam</span></Link>
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">

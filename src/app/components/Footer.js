@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { GitHub, Linkedin } from "react-feather";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,36 +9,36 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <span className="text-xl font-bold text-gray-800 dark:text-white">
-              Dev<span className="text-blue-600">Portfolio</span>
+              Mahmoud<span className="text-blue-600">Essam</span>
             </span>
             <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm">
-              Building modern web experiences with cutting-edge technologies.
+              Building modern website with cutting-edge technologies and best performance.
             </p>
           </div>
 
           <div className="flex space-x-6">
-            <a
+            <Link
               href="https://github.com/mahmoudessamdev"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub profile"
             >
               <GitHub className="w-6 h-6 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/mahmoud-essam-02a1b2242/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
             >
               <Linkedin className="w-6 h-6 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors" />
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800 text-center">
           <p className="text-gray-600 dark:text-gray-300 text-sm">
-            © {currentYear} DevPortfolio. All rights reserved.
+            © {currentYear} Mahmoud Essam. All rights reserved.
           </p>
         </div>
       </div>
