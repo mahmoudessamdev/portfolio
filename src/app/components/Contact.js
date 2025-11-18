@@ -1,33 +1,8 @@
 import { useState } from "react";
 import { GitHub, Linkedin } from "react-feather";
+import ContactForm from "./ContactForm";
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [formStatus, setFormStatus] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend or a form service
-    // For this example, we'll just simulate a successful submission
-
-    setFormStatus("sending");
-
-    setTimeout(() => {
-      setFormStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-    }, 1500);
-  };
+  
 
   return (
     <section id="contact" className="py-20">
@@ -159,77 +134,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold mb-4 text-gray-800 dark:text-white">
               Send a Message
             </h3>
-
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                >
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                >
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
-                >
-                  Your Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                disabled={formStatus === "sending"}
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-70"
-              >
-                {formStatus === "sending" ? "Sending..." : "Send Message"}
-              </button>
-
-              {formStatus === "success" && (
-                <div className="p-3 bg-green-100 text-green-700 rounded-md">
-                  Your message has been sent successfully! I&apos;ll get back to
-                  you soon.
-                </div>
-              )}
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>

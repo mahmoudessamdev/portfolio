@@ -33,27 +33,35 @@ export default function Hero() {
             >
               View Projects
             </ScrollTo>
-            {/* <button className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-gray-800 dark:text-white cursor-pointer">
-              Download CV
-            </button> */}
+            <button className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-medium text-gray-800 dark:text-white cursor-pointer">
+              <Link
+                href="/Mahmoud-Essam.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download CV"
+                download
+              >
+                Download CV
+              </Link>
+            </button>
           </div>
           <div className="mt-8 flex gap-4">
-            <a
+            <Link
               href="https://github.com/mahmoudessamdev"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub profile"
             >
               <GitHub className="w-6 h-6 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors" />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.linkedin.com/in/mahmoud-essam-02a1b2242/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn profile"
             >
               <Linkedin className="w-6 h-6 text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center">
