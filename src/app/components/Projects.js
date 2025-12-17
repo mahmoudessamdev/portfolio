@@ -3,6 +3,14 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
+      title: "WorkSpace Management",
+      description: "is a collaborative project between me and my team in DEPI to manage workspace and control every task",
+      technologies: ["React" , "TypeScript","Bootstrap" , "Xano backend", "React-Router"],
+      image: "/workspace/1.png",
+      demoLink : "https://workspace-alpha-sage.vercel.app/",
+      codeLink : "https://github.com/AbdelrahmanAshraf62651/Workspace/tree/development"
+    },
+    {
       title: 'course Page',
       description: 'A simple course page built with Next.js and tailwindcss.',
       technologies: ['Next.js', 'React', 'tailwindcss'],

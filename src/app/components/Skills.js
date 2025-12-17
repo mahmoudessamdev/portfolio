@@ -24,6 +24,7 @@ export default function Skills() {
         { name: "Performance Optimization", level: 80 },
         { name: "Material Ui", level: 80 },
         { name: "PostMan", level: 70 },
+        {name: "Xano backend" , level : 75}
       ],
     },
   ];
